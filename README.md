@@ -1,25 +1,25 @@
 # GradientBoosting-WineClassification-Wandb
 
 
-This repository contains an experimentation project for the Data Science class at Upgrade Hub. We utilize Weights & Biases to systematically tune and evaluate the hyperparameters of a Gradient Boosting Classifier. The dataset we are working with is the Wine dataset.
+Este repositorio contiene un proyecto de experimentación de ciencia de datos en Upgrade Hub. Utilizamos pesos y sesgos para ajustar y evaluar sistemáticamente los hiperparámetros de un clasificador de aumento de gradiente. El DataSet con el que estamos trabajando es el de Wine.
 
-## About Upgrade Hub
+## Sobre Upgrade Hub
 
-[Upgrade Hub](https://www.upgrade-hub.com/) is an educational institution dedicated to offering high-quality training programs in technology and data science.
+[Upgrade Hub](https://www.upgrade-hub.com/) Es una institución educativa dedicada a ofrecer programas de capacitación de alta calidad en tecnología y ciencia de datos.
 
-## Results
+## Resultados
 
-The experimentation results can be viewed in detail on the Weights & Biases dashboard. This includes various performance metrics such as accuracy, along with the hyperparameters used for each experiment.
+Los resultados de la experimentación se pueden ver en detalle en siguiente enlace de WanDB. Esto incluye varias métricas de rendimiento, como la precisión, junto con los hiperparámetros utilizados para cada experimento.
 
 🔗 [View Experimentation Results](https://api.wandb.ai/links/carlos-quintero-bautista/x31ys56l)
 
-## Problem Description
+## Descripción del Problema
 
-The task at hand is a classic example of a multi-class classification problem. We aim to predict the category of wine based on several physicochemical attributes. The Wine dataset is a common benchmark dataset in the machine learning community.
+La tarea que nos ocupa es un ejemplo clásico de un problema de clasificación multiclase. Nuestro objetivo es predecir la categoría de vino en función de varios atributos fisicoquímicos. El conjunto de datos de Wine es un conjunto de datos de referencia común en la comunidad de aprendizaje automático.
 
 ## Dataset
 
-The Wine dataset is a publicly available dataset that contains 178 samples of wines with 13 different attributes such as Alcohol content, Malic acid, Ash, etc. There are three classes, representing three different types of wines. The dataset is well-suited for classification experiments.
+El conjunto de datos Wine es un conjunto de datos disponible públicamente que contiene 178 muestras de vinos con 13 atributos diferentes, como contenido de alcohol, ácido málico, cenizas, etc. Hay tres clases que representan tres tipos diferentes de vinos. El conjunto de datos es muy adecuado para experimentos de clasificación.
 
 ## Experimentation
 
