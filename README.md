@@ -3,9 +3,7 @@
 
 Este repositorio contiene un proyecto de experimentación de ciencia de datos en Upgrade Hub. Utilizamos pesos y sesgos para ajustar y evaluar sistemáticamente los hiperparámetros de un clasificador de aumento de gradiente. El DataSet con el que estamos trabajando es el de Wine.
 
-## Sobre Upgrade Hub
-
-[Upgrade Hub](https://www.upgrade-hub.com/) Es una institución educativa dedicada a ofrecer programas de capacitación de alta calidad en tecnología y ciencia de datos.
+.
 
 ## Resultados
 
@@ -21,49 +19,37 @@ La tarea que nos ocupa es un ejemplo clásico de un problema de clasificación m
 
 El conjunto de datos Wine es un conjunto de datos disponible públicamente que contiene 178 muestras de vinos con 13 atributos diferentes, como contenido de alcohol, ácido málico, cenizas, etc. Hay tres clases que representan tres tipos diferentes de vinos. El conjunto de datos es muy adecuado para experimentos de clasificación.
 
-## Experimentation
+## Experimentación
 
-For this project, we utilize the Gradient Boosting Classifier, a powerful ensemble machine learning algorithm that builds on decision trees. It is particularly known for its effectiveness in classification problems.
+En este proyecto, empleamos el Clasificador de Impulso Gradiente, un sólido algoritmo de aprendizaje automático en conjunto que se basa en árboles de decisión. Su destacada eficacia en problemas de clasificación lo hace especialmente relevante.
 
-To find the best model, we explore various combinations of hyperparameters such as learning rate, maximum depth of the trees, the number of estimators, etc. Through systematic experimentation, we aim to understand the effect of these hyperparameters on the model's performance and find the combination that yields the best results.
+Con el fin de identificar el mejor modelo, exploramos diversas combinaciones de hiperparámetros, tales como la tasa de aprendizaje, la profundidad máxima de los árboles, el número de estimadores, entre otros. A través de una experimentación sistemática, buscamos comprender cómo estos hiperparámetros afectan el rendimiento del modelo y determinar la combinación que arroja los resultados más óptimos.
 
-We integrate Weights & Biases into our experimentation pipeline, which allows us to log the hyperparameters and the performance metrics for each experiment. Weights & Biases provides us with an interactive dashboard where we can visualize and analyze the results.
+Integramos Weights & Biases en nuestro proceso de experimentación, lo que nos permite registrar tanto los hiperparámetros como las métricas de rendimiento para cada experimento. Weights & Biases nos brinda un panel interactivo donde podemos visualizar y analizar de manera efectiva los resultados obtenidos.
 
-## Hyperparameter Tuning and Best Model
+## Ajuste de Hiperparámetros y Selección del Mejor Modelo
 
-During the experimentation process, we performed an extensive search over the hyperparameter space. A total of **384 different combinations** of hyperparameters were tested to find the model that yields the best performance. The hyperparameters that we tuned include:
+En el transcurso del proceso de experimentación, llevamos a cabo una exhaustiva exploración en el espacio de hiperparámetros. Se probaron un total de 384 combinaciones distintas para encontrar el modelo que proporcionara el mejor rendimiento. Los hiperparámetros que ajustamos abarcaron:
 
-- Learning rate
-- Maximum depth of the trees
-- Number of estimators
-- Loss function
-- Subsample fraction
-- Minimum number of samples required to split an internal node
-- Minimum number of samples required to be at a leaf node
+- Tasa de aprendizaje
+- Profundidad máxima de los árboles
+- Número de estimadores
+- Función de pérdida
+- Fracción de submuestra
+- Número mínimo de muestras requeridas para dividir un nodo interno
+- Número mínimo de muestras requeridas para ser una hoja
+Esta búsqueda minuciosa nos permitió explorar un amplio espectro de modelos y determinar la combinación de hiperparámetros que optimiza el rendimiento para este conjunto de datos específico.
 
-This extensive search allowed us to explore a wide range of models and identify the combination of hyperparameters that optimizes the performance for this specific dataset.
+El modelo que obtuvo la mejor puntuación logró una precisión del 0.9815. Este elevado nivel de precisión indica que el modelo es altamente eficaz en la correcta clasificación de las muestras de vino. Los hiperparámetros del mejor modelo son los siguientes:
 
-The model with the best score achieved an accuracy of **0.9815**. This high level of accuracy indicates that the model is highly effective in classifying the wine samples correctly. The hyperparameters of the best model are as follows:
-
-- Learning rate: 0.1
-- Loss function: deviance
-- Max depth: 3
-- min_samples_leaf: 2
-- min_samples_split: 2
-- n_estimators: 50
-- subsample: 1
-
-This combination of hyperparameters allowed the Gradient Boosting Classifier to capture the underlying patterns in the data efficiently and make highly accurate predictions.
-
-## Running the Code
-
-To run the code, first, ensure you have all the dependencies installed:
+- Tasa de aprendizaje: 0.1
+- Función de pérdida: deviance
+- Profundidad máxima: 3
+- Mínimo de muestras por hoja: 2
+- Mínimo de muestras para dividir: 2
+- Número de estimadores: 50
+- Submuestra: 1
+Esta combinación de hiperparámetros permitió al Clasificador de Impulso Gradiente capturar eficientemente los patrones subyacentes en los datos y realizar predicciones altamente precisas.
 
 
-## Contributions
 
-Contributions to this repository are welcome. Please, ensure that the code follows best practices and is well-documented.
-
-## License
-
-This project is licensed under the MIT License.
